@@ -82,7 +82,8 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
     margin-bottom: 20px;
 }
 .carousel-inner{
-  width:100%;
+  
+  width: 100%;
   max-height: 600px !important;
 }
 .post-sidebar{
@@ -372,6 +373,7 @@ p.blog-text{
 
 .office-logo {
   width: 100px;
+  
 }
 
 @media (max-width: 768px){ 
@@ -469,14 +471,35 @@ p.blog-text{
     transition:.4s;  
 }
 .services-group{
-  padding: 10px;
-  background:#061F20;
+  padding: 0 0 0 0;
+  background:#851678b4;
   color: white;
+  border: none;
+  border-radius: 60px;
 }
 .service-icon{
   color: white;
 }
 
+.abt-more{
+  display: none;
+  
+}
+
+.read-more{
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+}
+
+.read-more:hover {
+  background-color: rgb(10, 104, 245);
+  box-shadow: none;
+}
 
 /* ----- Footer ----- */
 .footer-widget{
@@ -515,13 +538,13 @@ footer h3 {
 }
 
 .footer-contact{
-    color: white;
+    color: #55CBD2;
 }
 
 
 /*Social Buttons */
 #social-icons{
-  font-size: 22px;
+  font-size: 24px;
 }
 
 #social-icons .btn-group {
@@ -529,7 +552,7 @@ footer h3 {
     margin-right: 15px;
 }
 #social-icons .btn-group:hover {
-    color: #ffffff;
+    color: #b90707;
 }
 
 .copyright {
