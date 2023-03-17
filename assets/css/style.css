@@ -42,6 +42,8 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 .section-global-wrapper:after {
   clear: both;
 }
+
+
 .container-fluid-kamn {
   margin-right: auto;
   margin-left: auto;
@@ -84,8 +86,10 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 .carousel-inner{
   
   width: 100%;
-  max-height: 600px !important;
+  max-height: 650px !important;
+  /* background-color: #FF00FF; */
 }
+
 .post-sidebar{
     margin-top: 15px;
     border:1px solid #DDD;
@@ -149,7 +153,7 @@ float: right;
 body {
     font-size: 15px;
     line-height: 24px;
-    background:#F8FAFF;
+    background-color: #eee3e5;
 }
 
 a {
@@ -472,13 +476,22 @@ p.blog-text{
 }
 .services-group{
   padding: 0 0 0 0;
-  background:#851678b4;
+  background:#d7375b;
   color: white;
   border: none;
   border-radius: 60px;
 }
 .service-icon{
   color: white;
+}
+
+.img-centrada {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: auto;
+  width: 100%;
 }
 
 .abt-more{
@@ -754,6 +767,7 @@ footer h3 {
 */
 .carousel-caption .carousel-title {
   color: #ffffff;
+  
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .carousel-caption {
