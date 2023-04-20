@@ -87,7 +87,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   
   width: 100%;
   max-height: 650px !important;
-  /* background-color: #FF00FF; */
+  background-color: #f6c5cf;
 }
 
 .post-sidebar{
@@ -153,7 +153,8 @@ float: right;
 body {
     font-size: 15px;
     line-height: 24px;
-    background-color: #eee3e5;
+    background-color: #d7375b;
+    color: #333333;
 }
 
 a {
@@ -231,7 +232,7 @@ address {
 * ==========================================================================
 */
 .active{
-  background:#74B9B9 !important;
+  background:#f6c5cf; !important;
   color: white;
 }
 .navbar {
@@ -239,6 +240,7 @@ address {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
+  background-color: #f6c5cf;
 }
 /*
 * ==========================================================================
@@ -264,7 +266,7 @@ address {
   padding-top: 0px;
 }
 .side-left{
-  background:#528C7C;
+  background:#f6c5cf;
   box-shadow: 3px grey;
   color: white;
   padding: 30px;
@@ -346,7 +348,7 @@ address {
     text-align: left;
     letter-spacing:.7px;
     font-size: 13px;
-    color: #71d7c2;
+    color: #f6c5cf;
 }
 
 .spacing{
@@ -356,7 +358,7 @@ address {
 .sidebar-right{
     font-size: 13px;
     font-weight: bold;
-    color:#84d7bd;
+    color:#f6c5cf;
 }
 
 .featured-img{
@@ -376,8 +378,8 @@ p.blog-text{
 }
 
 .office-logo {
-  width: 100px;
-  
+  width: 200px;
+  background-color: #ffffff;
 }
 
 @media (max-width: 768px){ 
@@ -432,8 +434,13 @@ p.blog-text{
 */
 .services-section {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuye las cajas con el mismo espacio horizontal entre ellas */
+  gap: 20px; /* Establece el espacio vertical y horizontal entre las cajas */
+
 }
 .services-section .services-header {
   margin-bottom: 50px;
@@ -451,6 +458,14 @@ p.blog-text{
 }
 .services-section .services-title {
   margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+.services-section .services-body{
+  margin-bottom: 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  
 }
 .services-section .services-desc {
   margin-bottom: 30px;
@@ -459,6 +474,7 @@ p.blog-text{
   .services-section {
     padding-top: 40px;
     padding-bottom: 40px;
+    height: max-content;
   }
   .services-section .services-group {
     margin-bottom: 50px;
@@ -475,12 +491,24 @@ p.blog-text{
     transition:.4s;  
 }
 .services-group{
-  padding: 0 0 0 0;
-  background:#d7375b;
-  color: white;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; /* Hace que todas las cajas tengan la misma altura */
+  padding: 15px;
+  background:#f6c5cf;
+  color: rgb(10, 10, 10);
   border: none;
-  border-radius: 60px;
+  border-radius: 110px;
+  overflow: hidden; /* Evita que el contenido se desborde */
 }
+
+.services-group .content {
+  flex-grow: 1;
+}
+
+
 .service-icon{
   color: white;
 }
@@ -491,26 +519,42 @@ p.blog-text{
   margin-right: auto;
   text-align: center;
   height: auto;
-  width: 100%;
+  width: 50%;
+}
+.img-centrada1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: auto;
+  width: 63%;
 }
 
 .abt-more{
   display: none;
-  
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 50px; /* Agrega un margen inferior de 20 píxeles */
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
 }
 
 .read-more{
+  position:absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px 20px;
-  background-color: aqua;
+  background-color: rgb(202, 195, 195);
   border: none;
   border-radius: 20px;
-  margin-top: 10px;
+  margin: 10 10 10 10;
   cursor: pointer;
-  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+  box-shadow: 1px 3px 11px -5px #f6c5cf;
+  font-family: 'Lato', sans-serif;
 }
 
 .read-more:hover {
-  background-color: rgb(10, 104, 245);
+  background-color: #463e40;
   box-shadow: none;
 }
 
@@ -546,7 +590,7 @@ footer{
 }
 
 footer h3 {
-    color: #dadada;
+    color: #ef0808;
     margin-bottom: 20px;
 }
 
@@ -766,7 +810,7 @@ footer h3 {
 * ==========================================================================
 */
 .carousel-caption .carousel-title {
-  color: #ffffff;
+  color: #f6c5cf;
   
 }
 @media (min-width: 768px) and (max-width: 1199px) {

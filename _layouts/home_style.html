@@ -6,7 +6,7 @@
   {% include script.html %}
     <head>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">   
-
+        <script src="../assets/scripts.js"></script>
     </head>
   <body>
     <!-- Begin #carousel-section -->
@@ -38,7 +38,7 @@
 
                         <!-- Begin Slide 3 -->
                         <div class="item">
-                            <img src="../assets/img/slider/slide7.jpeg" alt="Image of third carousel" class="img-centrada">
+                            <img src="../assets/img/slider/slide7.jpeg" alt="Image of third carousel" class="img-centrada1">
                         </div>
                         <!-- End Slide 3 -->
                     </div>
@@ -67,318 +67,359 @@
                 </div>
             </div>
       
-            <!-- Begin Services Row 1 -->
-            <div class="container1">
-                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
-                        <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
-                        <h4 class="titulos">Masajes con piedras calientes</h4>
-                        <p class="parrafos">Es una terapia relajante de origen oriental que trabaja no sólo en el plano físico sino también en el mental, ya que ayuda a relajar tensiones musculares y a conseguir un perfecto equilibrio energético.</p>
-                            <p class="parrafos" id="aboutmore" class="abt-more">Para la realización de este masaje se utilizan piedras calientes lisas de origen volcánico, que se deslizan sobre la piel mediante un relajante masaje.</p>
-                        <button onclick="handlebutton()" class="read-more">Leer más</button>
-                        
+           <!-- Begin Services Row 1 -->
+           <div class="row services-row services-row-head services-row-1">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+                                <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                                <h4 class="services-title">Masajes con piedras calientes</h4>
+                                <p class="services-body">Es una terapia relajante de origen oriental que trabaja no sólo en el plano físico sino también en el mental, ya que ayuda a relajar tensiones musculares y a conseguir un perfecto equilibrio energético.</p>
+                                <p id="aboutmore1" class="abt-more">Para la realización de este masaje se utilizan piedras calientes lisas de origen volcánico, que se deslizan sobre la piel mediante un relajante masaje.</p>
+                                <button onclick="toggleContent('aboutmore1', this)" class="read-more">Leer más</button>
+                            
+                        </div>
                     </div>
-                    </div>
-                
-        
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
-                        <p class="services-icon"></p>
-                        <h4 class="services-title">Californiano</h4>
-                        <p class="services-body">Es una técnica de masaje de relajación donde la masajista recorrerá el cuerpo a través de movimientos largos, estiramientos y torsiones creando fluidez para relajar el sistema nervioso.</p>
-                        <p id="aboutmore" class="abt-more">Lo que lo diferencia de otros masajes es el enfoque, durante la sesión el terapeuta va buscar armonizar holísticamente su energía con la del paciente, y así crear un campo vibracional único donde le permitirá al paciente dejarse llevar y liberarse del estrés y tensiones acumuladas.</p>
-                        <button onclick="handlebutton()" class="read-more">Leer más</button>
-                        <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
-                    </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                        <p class="services-icon"><i class="fa fa-flask fa-5x"></i></p>
-                        <h4 class="services-title">Ayurvedico</h4>
-                        <p class="services-body">Es un masaje tradicional de la india, donde se utilizan aceites esenciales puros y su finalidad es equilibrar las energías entre el cuerpo y la mente.</p>
-                            <p id="aboutmore" class="abt-more">Elimina toxinas, mejora el sistema inmune y circulatorio. Principalmente se consigue una relajación profunda del sistema nervioso.</p>
-                        <button onclick="handlebutton()" class="read-more">Leer más</button>
-                        <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
-                    </div>        
-                </div>
+
+                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="services-group" data-wow-offset="40">
+                                <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                                
+                                <h4 class="services-title">Californiano</h4>
+                                <p class="services-body">Es una técnica de masaje de relajación donde la masajista recorrerá el cuerpo a través de movimientos largos, estiramientos y torsiones creando fluidez para relajar el sistema nervioso.</p>
+                                <p id="aboutmore2" class="abt-more">Lo que lo diferencia de otros masajes es el enfoque, durante la sesión el terapeuta va buscar armonizar holísticamente su energía con la del paciente, y así crear un campo vibracional único donde le permitirá al paciente dejarse llevar y liberarse del estrés y tensiones acumuladas.</p>
+                                <button onclick="toggleContent('aboutmore2', this)" class="read-more">Leer más</button>
+                            </div>
+                     </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                                
+                                <h4 class="services-title">Ayurvedico</h4>
+                                <p class="services-body">Es un masaje tradicional de la india, donde se utilizan aceites esenciales puros y su finalidad es equilibrar las energías entre el cuerpo y la mente.</p>
+                                <p id="aboutmore3" class="abt-more">Elimina toxinas, mejora el sistema inmune y circulatorio. Principalmente se consigue una relajación profunda del sistema nervioso.</p>
+                                <button onclick="toggleContent('aboutmore3', this)" class="read-more">Leer más</button>
+                         </div>        
+                     </div>
+                     </div>
 
 
-                
+                     <!-- End Serivces Row 1 -->
+
+
+                    <!-- Begin Services Row 2 -->
+
+                     <div class="row services-row services-row-tail services-row-2">
                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
-                        <p class="services-icon"><span class="fa fa-leaf fa-5x"></span></p>
+                        <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
                             <h4 class="services-title">Champi</h4>
                             <p class="services-body">Es un masaje que está centrado en una parte fundamental del cuerpo: la cabeza. Es ideal aplicarlo en casos de ansiedad, preocupación, cansancio, agotamiento, tanto físico como mental.</p>
-                            <p id="aboutmore" class="abt-more">Es una terapia que relaja. Al estimular la irrigación sanguínea hacia el cuero cabelludo, también estamos efectuando un drenaje linfático, dispersando las toxinas acumuladas en estos puntos. También la terapeuta se enfocará en la parte superior de la espalda, los hombros, el cuello, el cuero cabelludo y el rostro.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p id="aboutmore4" class="abt-more">Es una terapia que relaja. Al estimular la irrigación sanguínea hacia el cuero cabelludo, también estamos efectuando un drenaje linfático, dispersando las toxinas acumuladas en estos puntos. También la terapeuta se enfocará en la parte superior de la espalda, los hombros, el cuello, el cuero cabelludo y el rostro.</p>
+                                <button onclick="toggleContent('aboutmore4', this)" class="read-more">Leer más</button>
+                                
                         </div>
                     </div>
             
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated zoomIn" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-female fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                          
                             <h4 class="services-title">Deportivo</h4>
-                            <p>Es un tipo de masaje que prepara los tejidos para el esfuerzo deportivo, prevención y recuperación de lesiones tanto en entrenamiento como en competición.</p>
-                                <p id="aboutmore" class="abt-more">Por este motivo, el masaje es tal vez, dentro de las técnicas fisioterapéuticas, la más apreciada por el deportista.
+                            <p class="services-body">Es un tipo de masaje que prepara los tejidos para el esfuerzo deportivo, prevención y recuperación de lesiones tanto en entrenamiento como en competición.</p>
+                                <p id="aboutmore5" class="abt-more">Por este motivo, el masaje es tal vez, dentro de las técnicas fisioterapéuticas, la más apreciada por el deportista.
                                 En este tipo de masaje se busca aumentar la circulación y la temperatura y se manipularán especialmente los grupos musculares que van a intervenir preferentemente en la actividad posterior.
                                 Es interesante ya que permite reducir el gasto de energía que emplea el deportista en un calentamiento activo.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                                <button onclick="toggleContent('aboutmore5', this)" class="read-more">Leer más</button>
+                                
                         </div>
                     </div>
             
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+
                             <h4 class="services-title">Drenaje Linfático</h4>
-                            <p class="services-body">Es un tipo de masaje que prepara los tejidos para el esfuerzo deportivo, prevención y recuperación de lesiones tanto en entrenamiento como en competición. Por este motivo, el masaje es tal vez, dentro de las técnicas fisioterapéuticas, la más apreciada por el deportista.
-                                En este tipo de masaje se busca aumentar la circulación y la temperatura y se manipularán especialmente los grupos musculares que van a intervenir preferentemente en la actividad posterior.
+                            <p class="services-body">Es un tipo de masaje que prepara los tejidos para el esfuerzo deportivo, prevención y recuperación de lesiones tanto en entrenamiento como en competición. Por este motivo, el masaje es tal vez, dentro de las técnicas fisioterapéuticas, la más apreciada por el deportista.</p>
+                               <p id="aboutmore6" class="abt-more"> En este tipo de masaje se busca aumentar la circulación y la temperatura y se manipularán especialmente los grupos musculares que van a intervenir preferentemente en la actividad posterior.
                                 Es interesante ya que permite reducir el gasto de energía que emplea el deportista en un calentamiento activo.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                                <button onclick="toggleContent('aboutmore6', this)" class="read-more">Leer más</button>
+                                
                         </div>
                     </div>
-    
+                </div>
+      <!-- End Serivces Row 2 -->
+      
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
-                            <p class="services-icon"><span class="fa fa-leaf fa-5x"></span></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Circulatorio</h4>
-                            <p class="services-body">Es una técnica encargada de favorecer la calidad del riego sanguíneo y linfático en el organismo, esto permite que la circulación de estos líquidos se distribuya por todos los órganos y tejidos aumentando la cantidad de nutrientes que llegan hasta ellos, además permite que las sustancias tóxicas y de desecho sean eliminadas.</p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Es una técnica encargada de favorecer la calidad del riego sanguíneo y linfático en el organismo, esto permite que la circulación de estos líquidos se distribuya por todos los órganos</p>
+                                <p id="aboutmore7" class="abt-more"> y tejidos aumentando la cantidad de nutrientes que llegan hasta ellos, además permite que las sustancias tóxicas y de desecho sean eliminadas.</p>
+                            <button onclick="toggleContent('aboutmore7', this)" class="read-more">Leer más</button>
+                            
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Maderoterapia</h4>
-                            <p class="services-body">La maderoterapia es una terapia que consiste en estimular el cuerpo con diferentes utensilios de madera con el objetivo de reducir los niveles de estrés y poder aliviar así los dolores musculares y articulares; también se usa para tratar la retención de líquido, la grasa localizada, combatir la celulitis y reafirmar y tonificar el cuerpo.</p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">La maderoterapia es una terapia que consiste en estimular el cuerpo con diferentes utensilios de madera con el objetivo de reducir los niveles de estrés y poder aliviar así los dolores musculares y articulares</p> 
+                                <p id="aboutmore8" class="abt-more">También se usa para tratar la retención de líquido, la grasa localizada, combatir la celulitis y reafirmar y tonificar el cuerpo.</p>
+                            <button onclick="toggleContent('aboutmore8', this)" class="read-more">Leer más</button>
+                            
                         </div>
                     </div>
     
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                           
                             <h4 class="services-title">Bambuterapia</h4>
-                            <p class="services-body">Es una tecnica en la que se utiliza varas o cañas de bambú que se aplican sobre el cuerpo con firmeza, haciéndolas resbalar suavemente por el cuerpo. Es conocida por sus resultados estéticos, como la reducción de las medidas, de la grasa localizada y de la celulitis, relajación muscular y alivio de tensión.</p>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
+                            <p class="services-body">Es una tecnica en la que se utiliza varas o cañas de bambú que se aplican sobre el cuerpo con firmeza, haciéndolas resbalar suavemente por el cuerpo. </p>
+                            <p id="aboutmore9" class="abt-more" >Es conocida por sus resultados estéticos, como la reducción de las medidas, de la grasa localizada y de la celulitis, relajación muscular y alivio de tensión.</p>
+                            <button onclick="toggleContent('aboutmore9', this)" class="read-more">Leer más</button>
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Chocoterapia</h4>
-                            <p class="services-body">Es una terapia que consiste en hacer masajes suaves tanto corporales como faciales al paciente, utilizando el cacao para cubrir las zonas del cuerpo en la que se quieren conseguir los beneficios que aporta a nuestra piel y bienestar general.
-                                Estimula la producción de colágeno, mantiene la piel hidratada y desintoxicada, y brinda efectos renovadores y tonificantes que contribuyen a que tu piel presente un aspecto más tonificado y rejuvenecido.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->  
+                            <p class="services-body">Es una terapia que consiste en hacer masajes suaves tanto corporales como faciales al paciente, utilizando el cacao para cubrir las zonas del cuerpo en la que se quieren conseguir los beneficios que aporta a nuestra piel y bienestar general.</p>
+                                <p id="aboutmore10" class="abt-more">Estimula la producción de colágeno, mantiene la piel hidratada y desintoxicada, y brinda efectos renovadores y tonificantes que contribuyen a que tu piel presente un aspecto más tonificado y rejuvenecido.</p>
+                                <button onclick="toggleContent('aboutmore10', this)" class="read-more">Leer más</button>
+                             
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Reductores</h4>
-                            <p class="services-body">Este masaje elimina la acumulación de grasa localizada y estiliza el contorno de la figura; es decir, crea una silueta más estética. 
-                                Es un masaje que se realiza con una presión fuerte y una velocidad más rápida a la utilizada en otros tipos de masajes como los relajantes.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Este masaje elimina la acumulación de grasa localizada y estiliza el contorno de la figura; es decir, crea una silueta más estética.</p>
+                            <p id="aboutmore11" class="abt-more">Es un masaje que se realiza con una presión fuerte y una velocidad más rápida a la utilizada en otros tipos de masajes como los relajantes.</p>
+                                <button onclick="toggleContent('aboutmore11', this)" class="read-more">Leer más</button>
+                                
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                           
                             <h4 class="services-title">Reflexologia</h4>
-                            <p class="services-body">Es una técnica de masaje que se aplica tanto en los pies como en las manos, donde a través de la estimulación de los puntos reflejos con masajes, presiones, frotaciones y amasamientos se busca restablecer la salud en el paciente, liberar bloqueos energéticos y emocionales, estimular la circulación sanguínea y nerviosa, e inducir a una relajación corporal de todo el organismo.</p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> --> 
+                            <p class="services-body">Es una técnica de masaje que se aplica tanto en los pies como en las manos, donde a través de la estimulación de los puntos reflejos con masajes, presiones, frotaciones y amasamientos se busca restablecer la salud en el paciente,</p> 
+                            <p id="aboutmore12" class="abt-more">liberar bloqueos energéticos y emocionales, estimular la circulación sanguínea y nerviosa, e inducir a una relajación corporal de todo el organismo.</p>
+                            <button onclick="toggleContent('aboutmore12', this)" class="read-more">Leer más</button>
+                           
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                     
                             <h4 class="services-title">Reiki</h4>
-                            <p class="services-body">Es una técnica de canalización y transmisión de energía vital, a través de la imposición de manos que sirve para equilibrar los chakras del cuerpo. Es decir, para conseguir el bienestar de todos los niveles: Físico, mental, emocional y espiritual.</p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->    
+                            <p class="services-body">Es una técnica de canalización y transmisión de energía vital, a través de la imposición de manos que sirve para equilibrar los chakras del cuerpo.</p>
+                            <p id="aboutmore13" class="abt-more">Es decir, para conseguir el bienestar de todos los niveles: Físico, mental, emocional y espiritual.</p>
+                            <button onclick="toggleContent('aboutmore13', this)" class="read-more">Leer más</button>
+                             
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Shiatsu</h4>
-                            <p class="services-body">Es una técnica japonesa que utiliza la presión de los dedos y la palma de las manos para equilibrar la energía del organismo, fomentando su capacidad de autocuración.</p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Es una técnica japonesa que utiliza la presión de los dedos y la palma de las manos para equilibrar la energía del organismo,</p> 
+                                <p id="aboutmore14" class="abt-more">fomentando su capacidad de autocuración.</p>
+                            <button onclick="toggleContent('aboutmore14', this)" class="read-more">Leer más</button>
+                            
                         </div>
                     </div>
     
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                         
                             <h4 class="services-title">Pindas Aromaticas</h4>
-                            <p class="services-body">La función del masaje con pindas es equilibrar mente, cuerpo y alma mediante el movimiento de masajes relajantes.
-                                Las pindas se componen de una preparación natural de hierbas aromáticas y medicinales que se envuelven en una tela en forma de bolsa, hecha a mano, y mezclada con aceites esenciales, que se calientan al vapor. Estos se aplican al cuerpo para potenciar sus propiedades calmantes, hidratantes y desintoxicantes.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->    
+                            <p class="services-body">La función del masaje con pindas es equilibrar mente, cuerpo y alma mediante el movimiento de masajes relajantes.</p>
+                                <p id="aboutmore15" class="abt-more">Las pindas se componen de una preparación natural de hierbas aromáticas y medicinales que se envuelven en una tela en forma de bolsa, hecha a mano, y mezclada con aceites esenciales, que se calientan al vapor. Estos se aplican al cuerpo para potenciar sus propiedades calmantes, hidratantes y desintoxicantes.</p>
+                                <button onclick="toggleContent('aboutmore15', this)" class="read-more">Leer más</button>
+                                  
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                         
                             <h4 class="services-title">Tailandes</h4>
                             <p class="services-body">Consiste en un masaje de estiramiento y de profundidad, aumentando la flexibilidad de músculos, ligamentos y tendones. Mejora la movilidad de las articulaciones y aumentan nuestra energía vital y la capacidad respiratoria.
-                                El objetivo es eliminar el estrés y recuperar la tranquilidad, haciendo circular libremente la energía a través del sistema de meridianos que recorren y riegan el cuerpo.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                                <p id="aboutmore16" class="abt-more">El objetivo es eliminar el estrés y recuperar la tranquilidad, haciendo circular libremente la energía a través del sistema de meridianos que recorren y riegan el cuerpo.</p>
+                                <button onclick="toggleContent('aboutmore16', this)" class="read-more">Leer más</button>
+                                
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Vendas Frias</h4>
-                            <p class="services-body">Esta terapia ayuda a bajar de peso, reducir la celulitis y combatir la flacidez. Se realiza con gel criógeno para intensificar la combustión de las grasas.</p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Esta terapia ayuda a bajar de peso, reducir la celulitis y combatir la flacidez.</p>
+                                <p id="aboutmore17" class="abt-more">Se realiza con gel criógeno para intensificar la combustión de las grasas.</p>
+                            <button onclick="toggleContent('aboutmore17', this)" class="read-more">Leer más</button>
+                          
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Tuina</h4>
-                            <p class="services-body">Aporta equilibrio físico, mental y emocional. Promueve la relajación total y al mismo tiempo resulta muy estimulante.
-                                Está recomendado para el tratamiento de problemas en músculos, huesos y ligamentos. Es muy efectivo para las lesiones deportivas y con problemas específicos como ciática, artritis, espasmos musculares y dolor de cuello y espalda, hombros, cadera, piernas, rodillas y tobillos.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Aporta equilibrio físico, mental y emocional. Promueve la relajación total y al mismo tiempo resulta muy estimulante.</p>
+                                <p id="aboutmore18" class="abt-more">Está recomendado para el tratamiento de problemas en músculos, huesos y ligamentos. Es muy efectivo para las lesiones deportivas y con problemas específicos como ciática, artritis, espasmos musculares y dolor de cuello y espalda, hombros, cadera, piernas, rodillas y tobillos.</p>
+                                <button onclick="toggleContent('aboutmore18', this)" class="read-more">Leer más</button>
+                                
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                         
                             <h4 class="services-title">Modelador</h4>
-                            <p class="services-body">Tiene el propósito de definir las curvas del cuerpo, reduciendo el peso al eliminar la grasa localizada que generalmente se acumula en muslos, caderas y vientre. </p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Tiene el propósito de definir las curvas del cuerpo, reduciendo el peso al eliminar la grasa localizada que generalmente se acumula en muslos,</p>
+                                <p id="aboutmore19" class="abt-more">caderas y vientre. </p>
+                            <button onclick="toggleContent('aboutmore19', this)" class="read-more">Leer más</button>
+                            
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                           
                             <h4 class="services-title">Holistico</h4>
-                            <p class="services-body">Se trata de amasar suavemente las distintas zonas corporales, estimulando los músculos para redirigir el sistema linfático. Extremadamente relajante. Trata el cuerpo y la mente como un todo con diferentes técnicas de masajes.</p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Se trata de amasar suavemente las distintas zonas corporales, estimulando los músculos para redirigir el sistema linfático.</p>
+                            <p id="aboutmore20" class="abt-more">Extremadamente relajante. Trata el cuerpo y la mente como un todo con diferentes técnicas de masajes.</p>
+                            <button onclick="toggleContent('aboutmore20', this)" class="read-more">Leer más</button>
+                           
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Guasha Facial</h4>
-                            <p class="services-body">Se trata de una piedra (de Jade, cuarzo) suave y de tamaño mediano que aplicado en masajes sobre la piel del rostro trabaja liberando toxinas, activando el riego sanguíneo y la circulación. Y el resultado no es otro que una dosis de rejuvenecimiento de la piel. Es decir, empleado en la rutina diaria es un perfecto compañero de tu tratamiento antiedad, especialmente, para difuminar las arrugas superficiales causadas por la expresión diaria.</p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Se trata de una piedra (de Jade, cuarzo) suave y de tamaño mediano que aplicado en masajes sobre la piel del rostro trabaja liberando toxinas, activando el riego sanguíneo y la circulación.</p>
+                                <p id="aboutmore21" class="abt-more">Y el resultado no es otro que una dosis de rejuvenecimiento de la piel. Es decir, empleado en la rutina diaria es un perfecto compañero de tu tratamiento antiedad, especialmente, para difuminar las arrugas superficiales causadas por la expresión diaria.</p>
+                            <button onclick="toggleContent('aboutmore21', this)"  class="read-more">Leer más</button>
+                            
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                          
                             <h4 class="services-title">Peeling</h4>
-                            <p class="services-body">Se trata de una exfoliación o descamación de la piel que utiliza sustancias químicas o mecánicas sobre la piel para renovar sus capas y eliminar imperfecciones. El objetivo principal es obtener una disminución de las arrugas y, por supuesto, una piel rejuvenecida y luminosa.
-                                Tambien sirve como tratamiento para el acné y manchas cutáneas.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Se trata de una exfoliación o descamación de la piel que utiliza sustancias químicas o mecánicas sobre la piel para renovar sus capas y eliminar imperfecciones.</p>
+                            <p id="aboutmore22" class="abt-more"> El objetivo principal es obtener una disminución de las arrugas y, por supuesto, una piel rejuvenecida y luminosa. Tambien sirve como tratamiento para el acné y manchas cutáneas.</p>
+                                <button onclick="toggleContent('aboutmore22', this)"  class="read-more">Leer más</button>
+                               
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Dermaplaning</h4>
-                            <p class="services-body">Es un método de exfoliación físico que consiste en utilizar un bisturí para raspar suavemente la capa superior de la piel constituida por células muertas, con el fin de revelar una tez más brillante y suave. Como siempre le decimos a nuestros pacientes es como cuando le quitamos una capa a una cebolla, siempre la parte interna esta más lisa y brillante.
-                                *Es un procedimiento indoloro y se puede comparar con la sensación de afeitar sus piernas, pero en este caso, es en su cara</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Es un método de exfoliación físico que consiste en utilizar un bisturí para raspar suavemente la capa superior de la piel constituida por células muertas, con el fin de revelar una tez más brillante y suave. Como siempre le decimos a nuestros pacientes es como cuando le quitamos una capa a una cebolla, siempre la parte interna esta más lisa y brillante.</p>
+                                <p id="aboutmore23" class="abt-more">*Es un procedimiento indoloro y se puede comparar con la sensación de afeitar sus piernas, pero en este caso, es en su cara</p>
+                                <button onclick="toggleContent('aboutmore23', this)" class="read-more">Leer más</button>
+                                
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                           
                             <h4 class="services-title">Radiofrecuencia Facial</h4>
-                            <p class="services-body">Está dirigida a tratar la laxitud de la piel. Es no invasiva e indolora, estimula la circulación sanguínea y la producción de colágeno y elastina, generando así un efecto tensor similar al lifting pero sin cirugía. Es un procedimiento adecuado para pacientes con flacidez leve o moderada de los tejidos faciales. </p>
-                            <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Está dirigida a tratar la laxitud de la piel. Es no invasiva e indolora, estimula la circulación sanguínea y la producción de colágeno y elastina, generando así un efecto tensor similar al lifting pero sin cirugía.</p>
+                            <p id="aboutmore24" class="abt-more">Es un procedimiento adecuado para pacientes con flacidez leve o moderada de los tejidos faciales. </p>
+                            <button onclick="toggleContent('aboutmore24', this)" class="read-more">Leer más</button>
+                        
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                     
                             <h4 class="services-title">Electroporación Facial</h4>
-                            <p class="services-body">Consiste en una onda que es pulsada y atérmica, y que altera la membrana de las células cuando entra en contacto con estas. Esencialmente, afecta a los lípidos y permite que se abran, haciendo que sean más permeables. 
-                                *Ayuda a reducir las inflamaciones en cualquier parte del cuerpo.
+                            <p class="services-body">Consiste en una onda que es pulsada y atérmica, y que altera la membrana de las células cuando entra en contacto con estas. Esencialmente, afecta a los lípidos y permite que se abran, haciendo que sean más permeables.</p>
+                                <p id="aboutmore25" class="abt-more">*Ayuda a reducir las inflamaciones en cualquier parte del cuerpo.
                                 *Contribuye al tratamiento de edemas o acumulaciones de líquido en el organismo.
-                                *Permite reducir el tamaño de los hematomas.
-                                </p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                                *Permite reducir el tamaño de los hematomas.</p>
+                                <button onclick="toggleContent('aboutmore25', this)" class="read-more">Leer más</button>
+                            
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+
                             <h4 class="services-title">Radiofrecuencia Corporal</h4>
-                            <p class="services-body">Es el tratamiento más empleado para la celulitis, la flacidez de la piel y la reducción de volumen corporal.
-                                Consiste en la aplicación de ondas electromagnéticas de alta frecuencia sobre la piel que provoca el calentamiento controlado de las diferentes capas de la dermis y favorece a: FORMACION DE NUEVO COLAGENO, CIRCULACION DE LA PIEL, DRENAJE LINFATICO.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                            <p class="services-body">Es el tratamiento más empleado para la celulitis, la flacidez de la piel y la reducción de volumen corporal.</p>
+                                <p id="aboutmore26" class="abt-more">Consiste en la aplicación de ondas electromagnéticas de alta frecuencia sobre la piel que provoca el calentamiento controlado de las diferentes capas de la dermis y favorece a: FORMACION DE NUEVO COLAGENO, CIRCULACION DE LA PIEL, DRENAJE LINFATICO.</p>
+                                <button onclick="toggleContent('aboutmore26', this)" class="read-more">Leer más</button>
+                                
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                            
                             <h4 class="services-title">Ozonoterapia</h4>
                             <p class="services-body">Es un tratamiento en el que el paciente estará de 20 a 25 min dentro de una cápsula. Sus beneficios son:
                                 *Es un potente antioxidante que retarda los procesos de envejecimiento celular.
-                                *Activa el metabolismo de los glóbulos rojos, transportando más oxígeno a las células.
-                                *Mejora la función celular y la circulación en general.
+                                *Activa el metabolismo de los glóbulos rojos, transportando más oxígeno a las células.</p>
+                                <p id="aboutmore27" class="abt-more">*Mejora la función celular y la circulación en general.
                                 *Disminuye la celulitis y estrías.
                                 *Disminuye la adiposidad localizada.
                                 *Alivia dolores crónicos.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                            <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                                <button onclick="toggleContent('aboutmore27', this)" class="read-more">Leer más</button>
+                            
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <p class="services-icon"><i class="fa fa-bath fa-5x"></i></p>
+                            <img src="../assets/img/slider/piedrascalientes.webp" alt="piedras calientes">
+                           
                             <h4 class="services-title">Ventosas Faciales</h4>
                             <p class="services-body">Es un tratamiento indicado para: 
-                                *Reducir la hinchazón (mitigando ojeras y doble mentón).
-                                *Suavizar las líneas finas y las arrugas. *Reafirmar los pómulos y el óvalo facial o tratar las cicatrices.</p>
-                                <button onclick="handlebutton()" class="read-more">Leer más</button>
-                                <!-- <p class="services-more"><a href="#">Find Out More</a></p> -->
+                                *Reducir la hinchazón (mitigando ojeras y doble mentón).</p>
+                                <p id="aboutmore28" class="abt-more">*Suavizar las líneas finas y las arrugas. *Reafirmar los pómulos y el óvalo facial o tratar las cicatrices.</p>
+                                <button onclick="toggleContent('aboutmore28', this)" class="read-more">Leer más</button>
+                                
                             
                         </div>
                     </div>
@@ -396,14 +437,6 @@
     <!-- End #services-section -->
 
 
-    <script>
-        function handlebutton(){
-          document.getElementById("aboutmore").classList.toggle("abt-more")
-        }
-        
-      </script>
-
   </body>
-
-  {% include footer.html %}
+{% include footer.html %}
 </html>
