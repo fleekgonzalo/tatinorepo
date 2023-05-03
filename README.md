@@ -32,4 +32,10 @@ I removed certain features from the original theme packages as we do not really 
 4. Your site should be accessible at `localhost:4000`.
 5. For additional information about Jekyll, refer to the [official website](http://jekyllrb.com/). 
 
+
+Instale toda esta documentacion :https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
+y luego instale nuevamente: gem install bundler jekyll y luego bundle install y finalmente :
+bundle exec jekyll serve
+# => Now browse to http://localhost:4000
+
 ## Enjoy!

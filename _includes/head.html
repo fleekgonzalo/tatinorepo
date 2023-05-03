@@ -7,7 +7,7 @@
   <meta name="author" content="">
 
   <!-- Favicon and touch icons -->
-  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+  <link rel="shortcut icon" href="../assets/ico/favicon1.ico">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
@@ -26,6 +26,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+
+<!-- Botón de WhatsApp flotante -->
+<a href="https://wa.me/5491123802901" class="float" target="_blank">
+  <img src="../assets/ico/icons8-whatsapp-48.png" width="48" height="48" alt="WhatsApp Logo" class="whatsapp-logo"/>
+  <span class="whatsapp-text">Reserva tu turno</span>
+  </a>
+
 
   <style>
     .container1 {
@@ -57,5 +64,45 @@
 			max-width: 800px;
       
 		}
+ 
+.float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:60px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:10px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+}
+.whatsapp-text {
+  position: absolute;
+  font-size: 12px;
+  bottom: -35px;
+  left: -2px;
+  right: -2px;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.float img {
+  max-width: 100%;
+  max-height: 100%;
+}
+img.whatsapp-logo {
+  border: none;
+}
+
   </style>
 </head>

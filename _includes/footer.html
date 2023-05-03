@@ -6,9 +6,9 @@
         <h3><i class="fa fa-map-marker"></i> Contacto:</h3>
         <p class="footer-contact">
           {{ site.company_name }} <br>
+          Horario: Lunes a sábados de 10 a 20 hs. <br> 
           Celular: {{ site.telephone_number }} <br>
-          <!-- Fax: {{ site.fax_number }} <br> -->
-          Email: {{ site.company_email }}<br>
+          E-mail: {{ site.company_email }}<br>
         </p>
       </div>
       <div class="col-md-4">
@@ -46,7 +46,7 @@
             </a>
           {% endif %}
 
-          {% if site.facebook_link %}
+          {% if site.instagram_link %}
             <a href="{{ site.instagram_link }}" class="btn-group instragram">
               <i class="fa fa-instagram"></i>
             </a>
@@ -58,7 +58,7 @@
   </div>
 
   <div class="copyright text center">
-    <p>&copy; Copyright {{ site.time | date: '%Y' }}, <a href="#">TIM Masajes</a>. 
+    <p>&copy; Copyright {{ site.time | date: '%Y' }}, <a href="/">TIM Masajes</a>. 
       <p>Todos los derechos reservados &copy; 2023 Terapia Integral de Masajes</p>
       <!-- <br>Theme ported by <a href="https://melvinchng.github.io/" target="_blank">Melvin Ch'ng</a></p> -->
   </div>

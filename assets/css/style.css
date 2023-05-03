@@ -577,6 +577,15 @@ p.blog-text{
   box-shadow: none;
 }
 
+
+
+.services-img {
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+}
+
+
 /* ----- Footer ----- */
 .footer-widget{
     color:white;
@@ -620,7 +629,7 @@ footer h3 {
 
 /*Social Buttons */
 #social-icons{
-  font-size: 24px;
+  font-size: 26px;
 }
 
 #social-icons .btn-group {
