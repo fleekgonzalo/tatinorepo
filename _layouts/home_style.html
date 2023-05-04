@@ -147,8 +147,8 @@
                             <img src="../assets/img/slider/drenajelinfatico.jpeg" alt="drenaje" class="services-img">
 
                             <h4 class="services-title">Drenaje Linfático</h4>
-                            <p class="services-body">Es un tipo de masaje que prepara los tejidos para el esfuerzo deportivo, prevención y recuperación de lesiones tanto en entrenamiento como en competición. Por este motivo, el masaje es tal vez, dentro de las técnicas fisioterapéuticas, la más apreciada por el deportista.</p>
-                               <p id="aboutmore6" class="abt-more"> En este tipo de masaje se busca aumentar la circulación y la temperatura y se manipularán especialmente los grupos musculares que van a intervenir preferentemente en la actividad posterior.
+                            <p class="services-body">Es un tipo de masaje que prepara los tejidos para el esfuerzo deportivo, prevención y recuperación de lesiones tanto en entrenamiento como en competición. </p>
+                               <p id="aboutmore6" class="abt-more"> Por este motivo, el masaje es tal vez, dentro de las técnicas fisioterapéuticas, la más apreciada por el deportista. En este tipo de masaje se busca aumentar la circulación y la temperatura y se manipularán especialmente los grupos musculares que van a intervenir preferentemente en la actividad posterior.
                                 Es interesante ya que permite reducir el gasto de energía que emplea el deportista en un calentamiento activo.</p>
                                 <button onclick="toggleContent('aboutmore6', this)" class="read-more">Leer más</button>
                                 
@@ -355,8 +355,8 @@
                             <img src="../assets/img/slider/dermaplaning.jpeg" alt="dermaplaning" class="services-img">
                             
                             <h4 class="services-title">Dermaplaning</h4>
-                            <p class="services-body">Es un método de exfoliación físico que consiste en utilizar un bisturí para raspar suavemente la capa superior de la piel constituida por células muertas, con el fin de revelar una tez más brillante y suave. Como siempre le decimos a nuestros pacientes es como cuando le quitamos una capa a una cebolla, siempre la parte interna esta más lisa y brillante.</p>
-                                <p id="aboutmore23" class="abt-more">*Es un procedimiento indoloro y se puede comparar con la sensación de afeitar sus piernas, pero en este caso, es en su cara</p>
+                            <p class="services-body">Es un método de exfoliación físico que consiste en utilizar un bisturí para raspar suavemente la capa superior de la piel constituida por células muertas, con el fin de revelar una tez más brillante y suave. </p>
+                                <p id="aboutmore23" class="abt-more">Como siempre le decimos a nuestros pacientes es como cuando le quitamos una capa a una cebolla, siempre la parte interna esta más lisa y brillante. *Es un procedimiento indoloro y se puede comparar con la sensación de afeitar sus piernas, pero en este caso, es en su cara</p>
                                 <button onclick="toggleContent('aboutmore23', this)" class="read-more">Leer más</button>
                                 
                         </div>
@@ -390,11 +390,11 @@
     
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                            <img src="../assets/img/slider/radiofrecuenciacorporal.jpeg" alt="radiofrecuencia corporal class="services-img">
+                            <img src="../assets/img/slider/radiofrecuenciacorporal.jpeg" alt="radiofrecuencia corporal" class="services-img">
 
                             <h4 class="services-title">Radiofrecuencia Corporal</h4>
                             <p class="services-body">Es el tratamiento más empleado para la celulitis, la flacidez de la piel y la reducción de volumen corporal.</p>
-                                <p id="aboutmore26" class="abt-more">Consiste en la aplicación de ondas electromagnéticas de alta frecuencia sobre la piel que provoca el calentamiento controlado de las diferentes capas de la dermis y orece a: FORMACION DE NUEVO COLAGENO, CIRCULACION DE LA PIEL, DRENAJE LINFATICO.</p>
+                                <p id="aboutmore26" class="abt-more">Consiste en la aplicación de ondas electromagnéticas de alta frecuencia sobre la piel que provoca el calentamiento controlado de las diferentes capas de la dermis y favorece a: FORMACION DE NUEVO COLAGENO, CIRCULACION DE LA PIEL, DRENAJE LINFATICO.</p>
                                 <button onclick="toggleContent('aboutmore26', this)" class="read-more">Leer más</button>
                                 
                         </div>
@@ -406,11 +406,11 @@
                             
                             <h4 class="services-title">Ozonoterapia</h4>
                             <p class="services-body">Es un tratamiento en el que el paciente estará de 20 a 25 min dentro de una cápsula. Sus beneficios son:
-                                *Es un potente antioxidante que retarda los procesos de envejecimiento celular.
+                                * Potente antioxidante que retarda los procesos de envejecimiento celular.
                                 *Activa el metabolismo de los glóbulos rojos, transportando más oxígeno a las células.</p>
                                 <p id="aboutmore27" class="abt-more">*Mejora la función celular y la circulación en general.
-                                *Disminuye la celulitis y estrías.
-                                *Disminuye la adiposidad localizada.
+                                Disminuye la celulitis y estrías.
+                                Disminuye la adiposidad localizada.
                                 *Alivia dolores crónicos.</p>
                                 <button onclick="toggleContent('aboutmore27', this)" class="read-more">Leer más</button>
                             
@@ -423,7 +423,7 @@
                            
                             <h4 class="services-title">Ventosas Faciales</h4>
                             <p class="services-body">Es un tratamiento indicado para: 
-                                *Reducir la hinchazón (mitigando ojeras y doble mentón).</p>
+                                Reducir la hinchazón (mitigando ojeras y doble mentón).</p>
                                 <p id="aboutmore28" class="abt-more">*Suavizar las líneas finas y las arrugas. *Reafirmar los pómulos y el óvalo facial o tratar las cicatrices.</p>
                                 <button onclick="toggleContent('aboutmore28', this)" class="read-more">Leer más</button>
                                 
@@ -439,10 +439,30 @@
             
             <!-- End Serivces Row 2 -->
     
-        </div>      
+        </div>   
+         
     </section>
     <!-- End #services-section -->
+    <!-- Funcion para el botton leer mas -->
+    <script>
+         function toggleContent(id, button) {
+  var content = document.getElementById(id);
+  content.classList.toggle("show");
+  if (content.classList.contains("show")) {
+    button.innerHTML = "Leer menos";
+  } else {
+    button.innerHTML = "Leer más";
+  }
+}
 
+    </script>
+    <!-- Botón de WhatsApp flotante -->
+<a href="https://wa.me/5491123802901" class="float" target="_blank">
+    <img src="../assets/ico/icons8-whatsapp-48.png" width="48" height="48" alt="WhatsApp Logo" class="whatsapp-logo"/>
+    <span class="whatsapp-text">Reserva tu turno</span>
+    </a>
+
+    
 
   </body>
 {% include footer.html %}

@@ -546,15 +546,15 @@ p.blog-text{
 
 
 
-
-
-
 .abt-more{
   display: none;
   text-align: center; /* Centra el texto horizontalmente */
   margin-bottom: 50px; /* Agrega un margen inferior de 20 píxeles */
   font-family: 'Lato', sans-serif;
   font-size: 15px;
+}
+.abt-more.show {
+  display: block !important;
 }
 
 .read-more{
@@ -640,11 +640,28 @@ footer h3 {
     color: #b90707;
 }
 
+
 .copyright {
     color: #fff;
     padding: 20px 0px 10px 0px;
     background-color: rgb(23, 23, 23);
 }
+#social-icons .btn-group {
+  display: inline-block;
+}
+
+#social-icons .btn-group a {
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) {
+  #social-icons .btn-group {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
+
 
 /*
 * ==========================================================================

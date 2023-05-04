@@ -6,7 +6,7 @@
         <h3><i class="fa fa-map-marker"></i> Contacto:</h3>
         <p class="footer-contact">
           {{ site.company_name }} <br>
-          Horario: Lunes a sábados de 10 a 20 hs. <br> 
+          Horario: Lunes a Sábados de 10 a 20 hs. <br> 
           Celular: {{ site.telephone_number }} <br>
           E-mail: {{ site.company_email }}<br>
         </p>
@@ -41,16 +41,17 @@
           {% endif %} -->
 
           {% if site.facebook_link %}
-            <a href="{{ site.facebook_link }}" class="btn-group facebook">
-              <i class="fa fa-facebook"></i>
-            </a>
-          {% endif %}
+  <a href="{{ site.facebook_link }}" class="btn-group facebook" style="display: inline-block;" >
+    <i class="fa fa-facebook"></i>
+  </a>
+{% endif %}
 
-          {% if site.instagram_link %}
-            <a href="{{ site.instagram_link }}" class="btn-group instragram">
-              <i class="fa fa-instagram"></i>
-            </a>
-          {% endif %}
+{% if site.instagram_link %}
+  <a href="{{ site.instagram_link }}" class="btn-group instagram" style="display: inline-block;">
+    <i class="fa fa-instagram"></i>
+  </a>
+{% endif %}
+
 
         </div>
       </div>    
