@@ -31,6 +31,8 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
     text-align: left;
 }
 
+
+
 .section-global-wrapper {
   position: relative;
 }
@@ -479,7 +481,10 @@ p.blog-text{
   margin-bottom: 15px;
   font-size: 80px;
   font-family: 'Roboto', sans-serif;
+  color: #f6c5cf;
+  
 }
+
 .services-section .services-row-tail {
   margin-top: 50px;
 }
@@ -878,3 +883,4 @@ footer h3 {
     font-size: 14px;
   }
 }
+
